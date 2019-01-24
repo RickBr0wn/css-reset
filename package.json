@@ -1,6 +1,6 @@
 {
   "name": "rick-brown-css-reset",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A simple CSS reset React Component",
   "main": "dist/index.js",
   "scripts": {
