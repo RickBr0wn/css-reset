@@ -1,11 +1,13 @@
 {
-  "name": "css-reset",
-  "version": "0.1.0",
+  "name": "rick-brown-css-reset",
+  "version": "0.1.1",
   "description": "A simple CSS reset React Component",
-  "main": "index.css",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --inline --hot"
+    "start": "webpack-dev-server --inline --hot",
+    "transpile": "babel src -d dist --copy-files",
+    "prepublishOnly": "npm run transpile"
   },
   "repository": {
     "type": "git",
@@ -21,7 +23,12 @@
     "url": "https://github.com/RickBr0wn/css-reset/issues"
   },
   "homepage": "https://github.com/RickBr0wn/css-reset#readme",
+  "peerDependencies": {
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
+  },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
